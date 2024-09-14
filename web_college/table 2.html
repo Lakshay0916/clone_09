@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .bold-italic {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan = "2">text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan = "2" class="bold" >Bold</td>
+            <td colspan="1" rowspan = "2" >text1</td>
+            <td rowspan = "1" >text</td>
+            <td colspan="2" rowspan = "2"><h2 style="color:blue">heading</h2></td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan = "1">text</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan = "2" ><font size = "5">text</font></i></td>
+            <td colspan="3" rowspan = "1" class = "bold"><font style="color:blue">text</font></td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan = "1" class = "underline"><strong><font style="color:blue">text</font></font></strong></td>
+        </tr>
+    
+    </table>
+</body>
+</html>
